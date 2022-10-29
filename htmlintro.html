@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .btndrop{
+            background-color: #274546;
+            color:#EFEEE5;
+            padding: 12px 36px;
+            font-size:16px;
+            border:none;
+            cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #274546;
+            text-align: center;
+            min-width: 149px;
+            z-index: 1;
+        }
+        .dropdown-content a{
+            color:#EFEEE5;
+            padding:12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover{
+            background-color: #2D0B00;
+        }
+        .dropdown:hover .dropdown-content{
+                display:block;
+        }
+        .dropdown:hover .btndrop{
+            background-color: #274546;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="btndrop">Kategoriler</button>
+        <div class="dropdown-content">
+            <a href="#">Asp.net</a>
+            <a href="#">C#</a>
+            <a href="#">Javascript</a>
+            <a href="#">Jquery</a>
+            <a href="#">Html</a>
+            <a href="#">Css</a>
+            <a href="#">Bootstrap</a>
+        </div>
+    </div>
+</body>
+</html>
